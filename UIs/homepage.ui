@@ -13,181 +13,164 @@
   <property name="windowTitle">
    <string>BudgetBuddy - Home</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">
-    background-color: rgb(202, 219, 194);
-   </string>
+   <property name="styleSheet">
+   <string notr="true">background-color: rgb(202, 219, 194);</string>
   </property>
-
-  <!-- Title -->
-  <widget class="QLabel" name="labelTitle">
+  <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>80</y>
-     <width>300</width>
-     <height>40</height>
+     <x>320</x>
+     <y>90</y>
+     <width>691</width>
+     <height>461</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Welcome! Let’s get started!</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="autoFillBackground">
+    <bool>false</bool>
    </property>
    <property name="styleSheet">
     <string notr="true">
-     font: 600 18pt "Segoe UI";
-     color: rgb(0, 0, 0);
-   </string>
-   </property>
-  </widget>
+border: 2px solid rgb(0,0,0);
 
-  <!-- Add Transaction -->
-  <widget class="QPushButton" name="buttonAddTransaction">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>180</y>
-     <width>180</width>
-     <height>60</height>
-    </rect>
+background-color: rgb(255, 252, 248);</string>
    </property>
-   <property name="text">
-    <string>Add Transactions</string>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
    </property>
-   <property name="styleSheet">
-    <string notr="true">
-     font: 600 12pt "Segoe UI";
-     color: rgb(0, 0, 0);
-     background: white;
-     border: 2px solid black;
-     border-radius: 6px;
-   </string>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
    </property>
-  </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>0</y>
+      <width>831</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 32pt &quot;Segoe UI&quot;;
+background-color: transparent;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>      Welcome, Let's Get Started!!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonAddTransaction">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>361</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(255, 252, 248);
 
-  <!-- View Transactions -->
-  <widget class="QPushButton" name="buttonViewTransaction">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>180</y>
-     <width>180</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>View Transactions</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-     font: 600 12pt "Segoe UI";
-     color: rgb(0, 0, 0);
-     background: white;
-     border: 2px solid black;
-     border-radius: 6px;
-   </string>
-   </property>
-  </widget>
 
-  <!-- Set Monthly Goal -->
-  <widget class="QPushButton" name="buttonSetGoal">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>280</y>
-     <width>180</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Set Monthly Goal</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-     font: 600 12pt "Segoe UI";
-     color: rgb(0, 0, 0);
-     background: white;
-     border: 2px solid black;
-     border-radius: 6px;
-   </string>
-   </property>
-  </widget>
+border: 2px solid rgb(0,0,0);
+border-radius : 20px;
+font: 600 18pt &quot;Segoe UI&quot;;
+color:rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>Add Transactions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonViewTransaction">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>190</y>
+      <width>361</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 252, 248);
 
-  <!-- Analyze Report -->
-  <widget class="QPushButton" name="buttonAnalyzeReport">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>280</y>
-     <width>180</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Analyze Report</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-     font: 600 12pt "Segoe UI";
-     color: rgb(0, 0, 0);
-     background: white;
-     border: 2px solid black;
-     border-radius: 6px;
-   </string>
-   </property>
-  </widget>
 
-  <!-- Profile -->
+border: 2px solid rgb(0,0,0);
+border-radius : 20px;
+font: 600 18pt &quot;Segoe UI&quot;;
+color:rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>View Transactions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonSetGoal">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>270</y>
+      <width>361</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 252, 248);
+
+
+border: 2px solid rgb(0,0,0);
+border-radius : 20px;
+font: 600 18pt &quot;Segoe UI&quot;;
+color:rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>Set Monthly Goals</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonAnalyzeReport">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>350</y>
+      <width>361</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 252, 248);
+
+
+border: 2px solid rgb(0,0,0);
+border-radius : 20px;
+font: 600 18pt &quot;Segoe UI&quot;;
+color:rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>Analyze Report</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QPushButton" name="buttonProfile">
    <property name="geometry">
     <rect>
-     <x>950</x>
-     <y>20</y>
-     <width>100</width>
-     <height>35</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Profile</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-     font: 600 11pt "Segoe UI";
-     color: rgb(0, 0, 0);
-     background: white;
-     border: 2px solid black;
-     border-radius: 6px;
-   </string>
-   </property>
-  </widget>
-
-  <!-- Logout -->
-  <widget class="QPushButton" name="buttonLogout">
-   <property name="geometry">
-    <rect>
      <x>900</x>
-     <y>660</y>
-     <width>100</width>
-     <height>35</height>
+     <y>50</y>
+     <width>111</width>
+     <height>31</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Logout</string>
-   </property>
    <property name="styleSheet">
-    <string notr="true">
-     font: 600 11pt "Segoe UI";
-     color: rgb(0, 0, 0);
-     background: white;
-     border: 2px solid black;
-     border-radius: 6px;
-   </string>
+    <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(202, 202, 202);
+
+font: 600 15pt &quot;Segoe UI&quot;;
+border: 2px solid rgb(0, 0, 0);
+border-radius : 6px;</string>
+   </property>
+   <property name="text">
+    <string>PROFILE</string>
    </property>
   </widget>
-
  </widget>
  <resources/>
  <connections/>
 </ui>
+
